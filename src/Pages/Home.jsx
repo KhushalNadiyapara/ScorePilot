@@ -31,9 +31,9 @@ const Home = () => {
       
       <div className="lg:ml-64 px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
         {/* Header Section */}
-        <div className="mb-8 pt-16 lg:pt-0">
+        <div className="mb-8 pt-16 lg:pt-0 flex">
           <div className="text-center lg:text-left">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-light text-gray-800 mb-3">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
               User Management
             </h1>
             <p className="text-base sm:text-lg text-gray-600 font-light">
@@ -113,10 +113,10 @@ const Home = () => {
                       <div className="flex items-center space-x-2">
                         <Link 
                           to={`/edit/${user._id}`}
-                          className="w-9 h-9 bg-blue-100 hover:bg-blue-300 rounded-full flex items-center justify-center text-blue-600 transition-colors duration-200"
+                          className="w-9 h-9  bg-blue-100 hover:bg-blue-300 rounded-full flex items-center justify-center text-blue-600 transition-colors duration-200"
                           title="Edit User"
                         >
-                          <i className="fa-solid fa-pen text-sm"></i>
+                         <b>E</b>
                         </Link>
                         <Link 
                          to={`/user/${user._id}`}
@@ -195,7 +195,7 @@ const Home = () => {
                                 className="w-8 h-8 bg-blue-100 hover:bg-blue-300 rounded-full flex items-center justify-center text-blue-600 transition-colors duration-200"
                                 title="Edit User"
                               >
-                                <i className="fa-solid fa-pen text-sm"></i>
+                              <b>E</b>
                               </Link>
                               <Link 
                                to={`/user/${user._id}`}

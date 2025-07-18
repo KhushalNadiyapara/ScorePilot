@@ -19,7 +19,7 @@ const UserDetail = () => {
               <h2 className="text-2xl font-bold text-red-600 mb-4">Error Loading User</h2>
               <p className="text-gray-600 mb-6">{error?.message || 'Failed to load user details'}</p>
               <Link
-                to="/"
+                to="/home"
                 className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors duration-200"
               >
                 <i className="fa-solid fa-arrow-left"></i>
@@ -67,7 +67,7 @@ const UserDetail = () => {
 
           {/* Loading State */}
           {isLoading ? (
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-white/30 shadow-lg p-8">
+            <div className="bg-gray-300 backdrop-blur-sm rounded-2xl border border-white/30 shadow-lg p-8">
               <div className="flex items-center justify-center py-12">
                 <div className="animate-spin rounded-full h-12 w-12 border-2 border-blue-200 border-t-blue-600"></div>
               </div>

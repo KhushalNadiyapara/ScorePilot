@@ -61,7 +61,7 @@ const Edit = () => {
     try {
       const response = await updateData(id, data);
       toast.success(response.data.msg || 'User updated successfully', { position: "top-center" });
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       console.error('Error updating user:', error);
       toast.error(error.response?.data?.msg || 'Failed to update user', { position: "top-center" });
@@ -79,9 +79,9 @@ const Edit = () => {
             <div className="flex items-center gap-4 mb-4">
               <Link 
                 to="/" 
-                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white text-gray-700 transition-all duration-200 shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-300 backdrop-blur-sm hover:bg-white text-gray-700 transition-all duration-200 shadow-md hover:shadow-lg"
               >
-                <i className="fa-solid fa-arrow-left"></i>
+               ◀️
               </Link>
               <h1 className="text-2xl lg:text-3xl font-light text-gray-800">
                 Update User
